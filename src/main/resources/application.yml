@@ -1,0 +1,19 @@
+spring:
+  mvc:
+    log-request-details: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate.ddl-auto: update
+    properties:
+      hibernate:
+        "globally_quoted_identifiers": true
+  datasource:
+    platform: postgres
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+logging:
+  level:
+    web: DEBUG
